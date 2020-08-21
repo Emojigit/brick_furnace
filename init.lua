@@ -288,7 +288,7 @@ minetest.register_node("brick_furnace:brick_furnace", {
 		default.get_inventory_drops(pos, "src", drops)
 		default.get_inventory_drops(pos, "fuel", drops)
 		default.get_inventory_drops(pos, "dst", drops)
-		drops[#drops+1] = "default:furnace"
+		drops[#drops+1] = "brick_furnace:brick_furnace"
 		minetest.remove_node(pos)
 		return drops
 	end,
